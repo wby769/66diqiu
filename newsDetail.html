@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>溜溜云-新闻详情页</title>
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+	<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+	</style>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+</head>
+<body>
+	<!--header-->
+	<div class="boxWrap headerWrap learfix">
+		<!-- logo -->
+		<a href="#" class="logo-img left">
+			<img src="imgs/logo.jpg" alt="溜溜云" />
+		</a>
+		<!--nav -->
+		<ul class="navWrap right">
+			<li><a href="index.html" title="首页">首页</a></li>
+			<li><a href="product.html" title="产品介绍">产品介绍</a></li>
+			<li><a href="users.html" title="关于我们">关于我们</a></li>
+			<li><a href="contactUs.html" title="联系我们">联系我们</a></li>
+			<li><a href="news.html" title="新闻资讯"  class="navActive">新闻资讯</a></li>
+			<li class="login">
+				<a href="login.html" title="系统登录" class="login-t">系统登录</a>
+				<!--<ul class="system-item none">-->
+					<!--<li><a target="_blank" href="http://www.66diqiu.cn" title="">B2B同业分销平台</a></li>-->
+					<!--<li><a target="_blank" href="http://www.xz12301.net/login" title=""><a href="" title="">合同管理系统</a></li>-->
+					<!--<li><a target="_blank" href="http://www.66diqiu.com:8888/" title="">CMS内容管理系统</a></li>-->
+					<!--<li><a target="_blank" href="http://www.66diqiu.com:8888/weixin/windex/index" title="">SCOM微信整合营销系统</a></li>-->
+					<!--<li><a target="_blank" href="http://erp.66diqiu.com/login.php" title="">BPM业务流程管理系统</a></li>-->
+					<!--<li><a target="_blank" href="http://erp.66diqiu.com/login.php" title="">CRM客户关系管理系统</a></li>-->
+				<!--</ul>-->
+			</li>
+		</ul>
+	</div>
+	<!-- banner -->
+	<div class="bannerWrap" style="height:555px;">
+		<img src="imgs/detail.png" alt="banner" />
+	</div>
+	<!-- 地图导航 -->
+	<div class="detailWrap">
+		<!-- 标题 -->
+		<div class="boxWrap">
+			<h1>热烈祝贺全国旅行社电子商务大会合肥站圆满落幕</h1>
+			<h2>发布时间：2015-10-27</h2>
+			<p>2015全国旅行社电子商务大会（合肥站）于2015年10月27日在合肥银瑞林国际大酒店圆满落幕。会议由浙江溜溜云大数据科技有限公司发起组织，徐州溜溜云网络科技有限公司、浙江游啊网络科技有限公司、南京掌旅宝网络科技有限公司承办。</p>
+			<p>安徽省旅游协会市场营销电子与电子商务分会副会长张遵宝、安徽省旅游学会副会长兼秘书长金寿虎等领导莅临会议。本次大会得到合肥旅游协会的大力支持，同时，来自全国各地的100多位业界代表出席了本次会议，万家热线、合肥电视台、新安晚报、合肥论坛等多家媒体到场支持。</p>
+			<p>大会以“互联网+智慧旅游”为主题，深度探讨关于“旅行社该如何开展电商”这一热点话题的解决方案。会议首先由浙江溜溜云大数据科技有限公司CEO马丁发表讲话，马总围绕大会主题展开了深入的讨论，并且结合实际案例进一步剖析溜溜云大数据提出的“四网合一”解决方案是如何在实战中更加有效的帮助旅行社解决在开展电子商务、提高工作效率过程中所遇到的问题。马总的演讲内容专业、实用，让与会代表们受益匪浅。</p>
+			<p>金牌讲师--印海老师和大家分享了大数据时代的互联网思维，他的主题是“旅行社如何进行微博微信营销”，生动且互动性强，受到了现场参会人员的热烈响应。</p>
+			<p>旅游法专家李志轩老师向大家讲解了如何规避法律风险的案例细节，解读了计划出台的旅行社条例（修订）对旅游行业的影响。</p>
+			<p>随后就是隆重的签约仪式，溜溜云大数据杭州分公司顾总与合肥本地供应商代表海口民间旅行社合肥分公司安总签署合作备忘录，接着顾总与旅行社代表安徽海达航空国际旅行社有限公司沈总签署合作备忘录。</p>
+			<p>大会致力于在“互联网+智慧旅游”时代下探讨国内传统旅行社在新形势下面临的新机遇与新挑战，如何运用互联网思维融合旅行社行业的新思考，改变行业现状，寻求突破，预测旅行社行业市场规模与电商未来空间，旅行社转型电子商务战略分析，旅行社行业电子商务运营模式分析，旅行社正确开展电子商务之道……全国旅行社电子商务大会此前已于南京、镇江、无锡等城市举办，其专业、务实的会议内容和良好的交流氛围广受业界的好评。</p>
+			<p>金秋十月，正当收获之时。本次大会的圆满落幕也标志着溜溜云大数据即将开启新的征程，在当今全新的“互联网+”时代下续写辉煌历史的新起点。</p>
+		</div>
+		
+	</div>
+	<!-- footer -->
+	<div class="footWrap box">
+		<!-- 底部内容 -->
+		<div class="boxWrap foot-box">
+			<!-- 溜溜云logo -->
+			<div class="foot-box-logo">
+				 <img src="imgs/btm-logo.png" alt="溜溜云" />
+				 <h1>溜溜云</h1>
+				 <p>旅游同业分销 服务云</p>
+			</div>
+			<!-- 中间内容 -->
+			<div class="foot-box-info">
+				<ul>
+					<li>
+						<h1>首页</h1>
+						<p><a href="product.html" title="">公司产品</a></p>
+						<p><a href="news.html" title="">新闻资讯</a></p>
+						<p><a href="users.html" title="">关于我们</a></p>
+						<p><a href="contactUs.html" title="">联系我们</a></p>
+						<p><a href="" title="">系统登录</a></p>
+					</li>
+					<li>
+						<h1>产品介绍</h1>
+						<p><a href="product.html" title="">产品</a></p>
+						<p><a href="product.html" title="">服务保障</a></p>
+					</li>
+					<li>
+						<h1>关于我们</h1>
+						<p><a href="users.html" title="">企业介绍</a></p>
+						<p><a href="users.html" title="">服务保障</a></p>
+					</li>
+					<li>
+						<h1>联系我们</h1>
+						<p><a href="contactUs.html" title="">杭州萧山区金城路</a></p>
+						<p><a href="contactUs.html" title="">400-835-5166</a></p>
+					</li>
+					<li>
+						<h1>集团新闻</h1>
+						<p><a href="news.html" title="">行业快讯</a></p>
+					</li>
+				</ul>
+			</div>
+			<!-- 官方微信 -->
+			<div class="foot-box-wei">
+				<h1>官方微信</h1>
+				<img src="imgs/wei.png" alt="微信">
+			</div>
+		</div>
+		<!-- 分割线 内容 -->
+		<p class="foot-btm">Copyright © 浙江溜溜云大数据科技有限公司 All Rights Reserved. 浙ICP备16013806号-1</p>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

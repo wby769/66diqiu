@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<title>溜溜云首页</title>
+	<link rel="icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js" ></script>
+	<script type="text/javascript" src="js/superslide.2.1.js"></script>
+	<script src="js/jquery.cxscroll.js"></script>
+	<script type="text/javascript" src="js/jquery.js" ></script>
+</head>
+<body>
+	<!--header-->
+	<div class="boxWrap headerWrap learfix">
+		<!-- logo -->
+		<a href="#" class="logo-img left">
+			<img src="imgs/logo.jpg" alt="溜溜云" />
+		</a>
+		<!--nav -->
+		<ul class="navWrap right">
+			<li><a href="index.html" title="首页" class="navActive">首页</a></li>
+			<li><a href="product.html" title="产品介绍">产品介绍</a></li>
+			<li><a href="users.html" title="关于我们">关于我们</a></li>
+			<li><a href="contactUs.html" title="联系我们">联系我们</a></li>
+			<li><a href="news.html" title="新闻资讯">新闻资讯</a></li>
+			<li class="login">
+				<a href="login.html" title="系统登录" class="login-t">系统登录</a>
+			</li>
+		</ul>		
+	</div>
+	<!--banner-->
+	<div class="fullSlide">
+		<div class="bd">
+			<ul>
+				<li _src="url(imgs/index-banner1.png)" style="background:transparent center 0 no-repeat;"><a href="#"></a></li>
+				<li _src="url(imgs/index-banner2.png)" style="background:transparent center 0 no-repeat;"><a href="#"></a></li>
+				<li _src="url(imgs/product-banner.png)" style="background:transparent center 0 no-repeat;"><a href="#"></a></li>
+			</ul>
+		</div>
+		<div class="hd"><ul></ul></div>
+		<span class="prev"></span>
+		<span class="next"></span>
+	</div>
+	<script type="text/javascript">
+		$(".fullSlide").hover(function(){
+		    $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+		},
+		function(){
+		    $(this).find(".prev,.next").fadeOut()
+		});
+		$(".fullSlide").slide({
+		    titCell: ".hd ul",
+		    mainCell: ".bd ul",
+		    effect: "fold",
+		    autoPlay: true,
+		    autoPage: true,
+		    trigger: "click",
+		    startFun: function(i) {
+		        var curLi = jQuery(".fullSlide .bd li").eq(i);
+		        if ( !! curLi.attr("_src")) {
+		            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+		        }
+		    }
+		});
+	</script>
+
+	<!-- 溜溜云公司简介内容 -->
+	<div class="infoWrap box">
+
+	</div>
+	<!-- 公司产品 -->
+	<div class="box itemWrap">
+		<h1>公司产品</h1>
+		<!--<p class="yw">COMPANY PRODUCT</p>-->
+		<div class="temp"></div>
+		<!-- 产品副标题 -->
+		<p class="product-fu-title">
+			<span>多平台</span>
+			<span>多模式</span>	
+			<span>准确引导</span>	
+			<span>快捷建站</span>		
+		</p>
+	</div>
+	<!-- 公司产品内容 -->
+	<div class="product-content boxWrap">
+		<div id="pic_list_1" class="scroll_horizontal box">
+			<div class="box">
+				<ul class="list">
+					<li class="in">
+						<a href="#" style="color:#dae0f8;" class="c1">
+							<img src="imgs/m1.png">
+						</a>
+						<div class="m-title c1-m">
+							<p class="tt">B2B</p>
+							<p class="tt">同业分销系统</p>
+							<p></p>
+							<p class="hid">坚持中立公正，全力维护供销双方的利益，并不断通过技术创新与资源整合满足供应商和分销商不断变化的行业需求，助推旅业线上线下融合，降本，增效。</p>
+						</div>
+					</li>
+					<li>
+						<a href="#" style="color:#faf1bd;" class="c2">
+							<img src="imgs/m2.png">
+						</a>
+						<div class="m-title c2-m">
+							<p class="tt">CONTRACT</p>
+							<p class="tt">合同系统</p>
+							<p class="hid">与地方政府旅游局合作，与旅行社业务系统无缝对接，为旅游质量监管、旅游诚信、旅游投诉、旅游保险等多部门管理提供数据参考。</p>
+						</div>
+					</li>
+					<li>
+						<a href="#" style="color:#c9deef;" class="c3">
+							<img src="imgs/m3.png">
+						</a>
+						<div class="m-title c3-m">
+							<p class="tt">CMS</p>
+							<p class="tt">内容管理系统</p>
+							<p class="hid">运用“大数据+云计算”技术，一键快速建站，旅游产品库智能更新、个性化内容编辑。实现游客便捷查询旅游线路，在线咨询、预订。</p>
+						</div>
+					</li>
+					<li>
+						<a href="#" style="color:#fef4df;" class="c4">
+							<img src="imgs/m4.png">
+						</a>
+						<div class="m-title c4-m">
+							<p class="tt">SCOM</p>
+							<p class="tt">微信整合营销系统</p>
+							<p class="hid">绑定用户公众号，后台数据抓取，进行旅游产品好友推送、即时在线咨询、订单处理、收益查询，实现移动终端全民式营销。</p>
+						</div>
+					</li>
+					<li>
+						<a href="#" style="color:#ccfaf4;" class="c5">
+							<img src="imgs/m5.png">
+						</a>
+						<div class="m-title c5-m">
+							<p class="tt">BPM</p>
+							<p class="tt">业务流程管理系统</p>
+							<p class="hid">系统涵盖旅行社专线产品分销业务管理，以及内部门市管理、计调管理、团队管理、财务管理等流程，同时支持手机移动端业务处理。</p>
+						</div>
+					</li>
+					<li>
+						<a href="#" style="color:#fff7e6;" class="c6">
+							<img src="imgs/m6.png">
+						</a>
+						<div class="m-title c6-m">
+							<p class="tt">CRM</p>
+							<p class="tt">客户关系管理系统</p>
+							<p class="hid">系统管理客户资源，协调用户与客户间在销售、营销和服务上的交互，为分销及渠道开通提供基础保障。</p>
+						</div>
+					</li>
+					<li>
+						<a href="#" style="color:#f8d6fe;" class="c7">
+							<img src="imgs/m7.png">
+						</a>
+						<div class="m-title c7-m">
+							<p class="tt">BI</p>
+							<p class="tt">商务智能和大数据分析</p>
+							<p class="hid">针对市场行为及产品热点，建立数据仓库，实现商业数据智能化分析、图形化展示，提供决策支持。</p>
+						</div>
+					</li>
+					<li>
+						<a href="#" style="color:#ffe2f0;" class="c8">
+							<img src="imgs/m8.png">
+						</a>
+						<div class="m-title c8-m">
+							<p class="tt">RP</p>
+							<p class="tt">资源库</p>
+							<p class="hid">涵盖酒店、餐饮、景点、购物等旅游产品需要的全部资源，同时汇总接入平台的旅游从业组织，便于系统用户的灵活使用。</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script>
+			$("#pic_list_1").cxScroll();
+		</script>
+		<!-- CMS内容管理系统 -->
+		<div class="cut-content box">
+			<div>
+				<h1>B2B同业分销平台</h1>
+				<p>坚持中立公正，全力维护供销双方的利益，并不断通过技术创新与资源整合满足供应商和分销商不断变化的行业需求，助推旅业线上线下融合，降本，增效。</p>
+			</div>
+		</div>
+	</div>
+	<!-- 三大业务-->
+	<div class="box itemWrap" style="background:#efefef;">
+		<h1>三大业务</h1>
+		<!--<p class="yw">SOLUTION</p>-->
+		<div class="temp"></div>
+		<!-- 产品副标题 -->
+		<p class="product-fu-title">
+			<span>专业</span>
+			<span>快速</span>	
+			<span>共融</span>	
+			<span>共赢</span>		
+		</p>
+	</div>
+	<!-- 三大业务内容 -->
+	<div class="projectWrap">
+		<!-- 线上线下订单量少 -->
+		<div class="project-item box left">
+			<div class="project-item-content box p1">
+				<img src="imgs/project1.png" alt="">
+				<img src="imgs/project1-w.png" alt="" class="none">
+				<div class="hr"></div>
+				<h1>2B/b的业务</h1>
+				<p>
+					公司以旅游从业者和旅游企业为服务对象，运用自主开发的移动旅游大数据平台降低生产和销售成本，满足消费者对高品质个性化旅游的需求。
+				</p>
+			</div>
+		</div>
+		<!-- 产品匮乏 -->
+		<div class="project-item box right" style="width:49.99%">
+			<div class="project-item-content box p2">
+				<img src="imgs/project2.png" alt="">
+				<img src="imgs/project2-w.png" alt="" class="none">
+				<div class="hr"></div>
+				<h1>双创和公共信息服务</h1>
+				<p>
+					以旅游管理机构为服务对象，自主研发了智慧旅游双创云平台、智慧旅游公共服务云平台系列管理营销系统。
+				</p>
+			</div>
+		</div>
+		<!-- 营销渠道有限 -->
+		<div class="project-item box left">
+			<div class="project-item-content box p3">
+				<img src="imgs/project3.png" alt="">
+				<img src="imgs/project3-w.png" alt="" class="none">
+				<div class="hr"></div>
+				<h1>覆盖全国的旅游服务供应链金融</h1>
+				<p>
+					通过和第三方合作，建立覆盖全国的旅游服务供应链金融体系。与银行等第三方金融机构合作溜溜云将建立覆盖全国的旅游服务供应链金融体系。
+				</p>
+			</div>
+		</div>
+		<!-- 营销工具不足 -->
+		<div class="project-item box right" style="width:49.99%">
+			<div class="project-item-content box p4">
+				<img src="imgs/project4.png" alt="">
+				<img src="imgs/project4-w.png" alt="" class="none">
+				<div class="hr"></div>
+				<h1>更多业务</h1>
+				<p>
+					不断追求，精益求精
+				</p>
+			</div>
+		</div>
+	</div>
+	 <!--业务场景-->
+	<div class="box itemWrap">
+		<h1>业务场景</h1>
+		<!--<p class="yw">BUSINESS SCENARIO</p>-->
+		<div class="temp"></div>
+		<!-- 产品副标题 -->
+		<p class="product-fu-title">
+			<span>微信营销</span>
+			<span>海量产品</span>	
+			<span>管理系统</span>	
+			<span>决策帮助</span>		
+		</p>
+	</div>
+	<!-- 业务场景内容 -->
+	<div class="boxWrap businessWrap">
+		<div class="business-box">
+			<!-- 内容左 -->
+			<div class="business-l">
+				<img src="imgs/business1.png" alt="">
+				<div class="business-info">
+					<h1>您想获得</h1>
+					<p>更多的线路资源</p>
+					<p>更好的管理手段</p>
+					<p>更优的宣传推广吗</p>
+					<a href="product.html" title="">点击了解更多</a>
+				</div>
+			</div>
+			<!-- 内容右 -->
+			<div class="business-r">
+				<img src="imgs/business2.png" alt="">
+				<div class="business-info">
+					<h1>您想获得</h1>
+					<p>更多的分销渠道</p>
+					<p>更好的计调管理</p>
+					<p>更优的运行管路吗</p>
+					<a href="product.html" title="">点击了解更多</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 我们坚持 -->
+	<div class="box itemWrap" style="background:#efefef;">
+		<h1>我们坚持</h1>
+		<!--<p class="yw">SOLUTION</p>-->
+		<div class="temp"></div>
+		<!-- 副标题 -->
+		<p class="product-fu-title">
+			<span>严谨</span>
+			<span>高效</span>	
+			<span>创新</span>	
+			<span>分享</span>
+			<span>敬业</span>
+			<span>责任</span>		
+		</p>
+	</div>
+	<!-- 我们坚持内容  -->
+	<div class="userWrap box">
+		<!-- 切换图片  -->
+		<div class="userWrap-img box left">
+			<img src="imgs/jishu.png" alt="技术" />
+			<img src="imgs/fuwu.png" alt="服务" class="none" />
+			<img src="imgs/hezuo.png" alt="合作" class="none" />
+		</div>
+		<!-- 切换标题 -->
+		<div class="userWrap-title box left">
+			<ul>
+				<li class="on">
+					<img src="imgs/jianchi1.png" alt="">
+					<div class="userWrap-info">
+						<h1>我们的坚持——技术</h1>
+						<!--<p>WOMENDEJIANCHI-JISHU</p>-->
+					</div>
+				</li>
+				<li>
+					<img src="imgs/jianchi2.png" alt="">
+					<div class="userWrap-info">
+						<h1>我们的坚持——服务</h1>
+						<!--<p>WOMENDEJIANCHI-FUWU</p>-->
+					</div>
+				</li>
+				<li class="last-box">
+					<img src="imgs/jianchi3.png" alt="">
+					<div class="userWrap-info">
+						<h1>我们的坚持——合作</h1>
+						<!--<p>WOMENDEJIANCHI-HEZUO</p>-->
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="footWrap box">
+		<!-- 底部内容 -->
+		<div class="boxWrap foot-box">
+			<!-- 溜溜云logo -->
+			<div class="foot-box-logo">
+				 <img src="imgs/btm-logo.png" alt="溜溜云" />
+				 <h1>溜溜云</h1>
+				 <p>旅游同业分销 服务云</p>
+			</div>
+			<!-- 中间内容 -->
+			<div class="foot-box-info box">
+				<ul>
+					<li>
+						<h1>首页</h1>
+						<p><a href="product.html" title="">公司产品</a></p>
+						<p><a href="news.html" title="">新闻资讯</a></p>
+						<p><a href="users.html" title="">关于我们</a></p>
+						<p><a href="contactUs.html" title="">联系我们</a></p>
+						<p><a href="" title="">系统登录</a></p>
+					</li>
+					<li>
+						<h1>产品介绍</h1>
+						<p><a href="product.html" title="">产品</a></p>
+						<p><a href="product.html" title="">服务保障</a></p>
+					</li>
+					<li>
+						<h1>关于我们</h1>
+						<p><a href="users.html" title="">企业介绍</a></p>
+						<p><a href="users.html" title="">服务保障</a></p>
+					</li>
+					<li>
+						<h1>联系我们</h1>
+						<p><a href="contactUs.html" title="">杭州萧山区金城路</a></p>
+						<p><a href="contactUs.html" title="">400-835-5166</a></p>
+					</li>
+					<li>
+						<h1>集团新闻</h1>
+						<p><a href="news.html" title="">行业快讯</a></p>
+					</li>
+				</ul>
+			</div>
+			<!-- 官方微信 -->
+			<div class="foot-box-wei">
+				<h1>官方微信</h1>
+				<img src="imgs/wei.png" alt="微信">
+			</div>
+		</div>
+		<!-- 分割线 内容 -->
+		<p class="foot-btm">Copyright © 浙江溜溜云大数据科技有限公司 All Rights Reserved. 浙ICP备16013806号-1</p>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
