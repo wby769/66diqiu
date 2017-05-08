@@ -27,6 +27,7 @@ input{font-family: "微软雅黑";}
 textarea{font-family: "微软雅黑";}
 img{border:0px;  outline-width:0px;  vertical-align:top;}
 .none { display:none;}
+body{min-width: 1240px;}
 .boxWrap{
 	max-width:1200px;
 	min-width:1200px;
